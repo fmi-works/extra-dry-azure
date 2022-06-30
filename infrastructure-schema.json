@@ -8,13 +8,16 @@
 		"subscription",
 		"location",
 		"group",
-		"keyVault",
-		"storageAccounts",
-		"serviceBus",
-		"dbms",
-		"appServicePlan"
+		"version"
 	],
 	"properties": {
+		"version": {
+			"$id": "#root/subscription",
+			"title": "Version",
+			"type": "string",
+			"enum": [ "0.3.1" ],
+			"description": "The version is designed to keep the file aligned with the configuration program.  If version is out of date, download latest infrastructure.ps1 file."
+		},
 		"subscription": {
 			"$id": "#root/subscription",
 			"title": "Subscription",
